@@ -21,13 +21,12 @@ const questions = [
         type: `input`,
         name: `installation`,
         message: `How should your app be installed?`,
-        default: ``
     },
     {
         type: `input`,
         name: `usage`,
-        message: `Any intructions on how the app should be used`,
-        default: ``
+        message: `Any instructions on how the app should be used`,
+
     },
     {
         type: `input`,
@@ -94,7 +93,7 @@ ${license}
 for (let name of contributors) {
     buildString += `
 
-[![](https://img.shields.io/badge/github-${name}-brightgreen?style=plastic)](www.github.com/${name})`
+[![](https://img.shields.io/badge/github-${name}-brightgreen?style=plastic)](https://www.github.com/${name})`
 }
 buildString += `
 
@@ -102,7 +101,7 @@ buildString += `
 
 ![](${userAvatar})
 
-[![](https://img.shields.io/badge/gitHub-${username}-blue?style=plastic)](www.github.com/${username}) | 
+[![](https://img.shields.io/badge/gitHub-${username}-blue?style=plastic)](https://www.github.com/${username}) | 
 [![](https://img.shields.io/badge/email-${userMail}-purple?style=plastic)](mailto:${userMail})
 `
 
