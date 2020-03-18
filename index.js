@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const fetch = require('node-fetch');
+const builder = require('./builder.js');
 
 let answers;
 let readme;
@@ -56,7 +57,7 @@ async function collectData() {
         temporary.userAvatar = getHub.avatar_url;
         temporary.userMail = getMail[0].payload.commits[0].author.email;
         console.log(temporary);
-        const answers = buildReadme(temporary);  
+        const answers = builder(temporary);  
         console.log(answers);
         await fs.writeFile('README.md', answers, 'utf8', err => console.log(err) );
 
@@ -67,43 +68,3 @@ async function collectData() {
 
 collectData();
 
-function buildReadme({title, description, installation, usage, license, contributors, username, userAvatar, userMail}) {
-let buildString = `# ${title}
-
-### ${description}
-
-## Table of Contents
-
-[Installation](#Installation) | [Usage](#Usage) | [License](#License) | [Contributors](#Contributors) | [Questions](#Questions)
-
-## Installation
-
-${installation}
-
-## Usage
-
-${usage}
-
-## License
-
-${license}
-
-## Contributors`;
-
-for (let name of contributors) {
-    buildString += `
-
-[![](https://img.shields.io/badge/github-${name}-brightgreen?style=plastic)](https://www.github.com/${name})`
-}
-buildString += `
-
-## Questions
-
-![](${userAvatar})
-
-[![](https://img.shields.io/badge/gitHub-${username}-blue?style=plastic)](https://www.github.com/${username}) | 
-[![](https://img.shields.io/badge/email-${userMail}-purple?style=plastic)](mailto:${userMail})
-`
-
-return buildString;
-}
