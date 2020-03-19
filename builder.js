@@ -30,7 +30,7 @@ ${license}
 
 ## Questions
 
-![](${userAvatar})
+![](${userAvatar}&s=200)
 
 [![](https://img.shields.io/badge/gitHub-${username}-blue?style=plastic)](https://www.github.com/${username}) | 
 [![](https://img.shields.io/badge/email-${userMail}-purple?style=plastic)](mailto:${userMail})

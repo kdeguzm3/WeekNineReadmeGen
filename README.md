@@ -26,7 +26,7 @@ MIT
 
 ## Questions
 
-![](https://avatars3.githubusercontent.com/u/58832810?v=4)
+![](https://avatars3.githubusercontent.com/u/58832810?v=4&s=200)
 
 [![](https://img.shields.io/badge/gitHub-kdeguzm3-blue?style=plastic)](https://www.github.com/kdeguzm3) | 
 [![](https://img.shields.io/badge/email-kaydeekhing@gmail.com-purple?style=plastic)](mailto:kaydeekhing@gmail.com)
