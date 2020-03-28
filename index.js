@@ -55,7 +55,11 @@ async function collectData() {
         let getMail = await fetch(`https://api.github.com/users/${temporary.username}/events/public`);
         getMail = await getMail.json();
         temporary.userAvatar = getHub.avatar_url;
-        temporary.userMail = getMail[0].payload.commits[0].author.email;
+        let pushElement;
+        for (element of getMail) {
+            if (element.type = "PushEvent") pushElement = element;
+        }
+        temporary.userMail = pushElement.payload.commits[0].author.email;
         console.log(temporary);
         const answers = builder(temporary);  
         console.log(answers);

@@ -1,6 +1,6 @@
-# Readme Generator
+# Week Nine Readme Gen
 
-### Generates a good readme template for repos, like this one you're reading.
+### Makes an amazing readme to begin with
 
 ## Table of Contents
 
@@ -8,11 +8,11 @@
 
 ## Installation
 
-you have to fork the repo for now
+npm install wnrg
 
 ## Usage
 
-$ node index
+node index
 
 ## License
 
