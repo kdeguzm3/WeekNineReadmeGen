@@ -67,7 +67,7 @@ async function collectData() {
         console.log(temporary);
         const answers = builder(temporary);  
         console.log(answers);
-        await fs.writeFile('README.md', answers, 'utf8', err => console.log(err) );
+        await fs.writeFile("./output/README.md", answers, 'utf8', err => console.log(err) );
 
     } catch(error) {
         console.log(error);
