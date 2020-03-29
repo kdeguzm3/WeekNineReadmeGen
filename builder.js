@@ -9,11 +9,11 @@ module.exports = function({title, description, installation, usage, license, con
 
 ## Installation
 
-${installation}
+        $ ${installation}
 
 ## Usage
 
-${usage}
+        $ ${usage}
 
 ## License
 

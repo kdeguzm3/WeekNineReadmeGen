@@ -1,6 +1,6 @@
-# Week Nine Readme Gen
+# Week Nine Readme Generator
 
-### Makes an amazing readme to begin with
+### makes a good readme template
 
 ## Table of Contents
 
@@ -8,11 +8,11 @@
 
 ## Installation
 
-npm install wnrg
+        $ npm install (no installation yet)
 
 ## Usage
 
-node index
+        $ node index
 
 ## License
 
@@ -23,6 +23,8 @@ MIT
 [![](https://img.shields.io/badge/github-altays-brightgreen?style=plastic)](https://www.github.com/altays)
 
 [![](https://img.shields.io/badge/github-kneves1-brightgreen?style=plastic)](https://www.github.com/kneves1)
+
+[![](https://img.shields.io/badge/github-vsaleem-brightgreen?style=plastic)](https://www.github.com/vsaleem)
 
 ## Questions
 

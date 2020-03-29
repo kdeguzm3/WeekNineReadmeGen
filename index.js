@@ -57,8 +57,12 @@ async function collectData() {
         temporary.userAvatar = getHub.avatar_url;
         let pushElement;
         for (element of getMail) {
-            if (element.type = "PushEvent") pushElement = element;
+            if (element.type = "PushEvent") {
+                pushElement = element;
+                break;
+            }
         }
+        console.log(pushElement);
         temporary.userMail = pushElement.payload.commits[0].author.email;
         console.log(temporary);
         const answers = builder(temporary);  
