@@ -23,6 +23,6 @@
   "homepage": "https://github.com/kdeguzm3/WeekNineReadmeGen#readme",
   "dependencies": {
     "inquirer": "^7.1.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
